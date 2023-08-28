@@ -2,10 +2,11 @@ import React from 'react'
 import  {styles} from '../styles'
 import {ComputersCanvas} from './canvas'
 import { motion } from "framer-motion";
-
+import arcade from './backgrounds/arcade.mp4'
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
+   <video src={arcade} autoPlay loop muted className="absolute inset-0 w-full h-full object-cover"/>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
