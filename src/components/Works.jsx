@@ -19,7 +19,7 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
       "max-glare":0.5
     }} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full  d">
       <div className="relative w-full h-[230px]">
-        <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl"/>
+        <img src={image} alt={name} className="w-full h-full object-cover  "/>
 
         </div>
 <div className="absolute inset-0 flex flex-justify-end m-3 card_img_hover">

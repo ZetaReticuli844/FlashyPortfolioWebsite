@@ -29,6 +29,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import django from "./tech/django.png"
+import passwordmanager from "./passwordmanager.png"
 
 export {
   logo,
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  django,
+  passwordmanager,
 };

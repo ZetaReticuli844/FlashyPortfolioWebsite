@@ -2,12 +2,14 @@ import React from 'react'
 import  {styles} from '../styles'
 import {ComputersCanvas} from './canvas'
 import { motion } from "framer-motion";
-import arcade from './backgrounds/arcade.mp4'
+import ParticlesBackground from './backgrounds/ParticlesBackground';
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-   <video src={arcade} autoPlay loop muted className="absolute inset-0 w-full h-full object-cover"/>
-      <div
+      <div className="absolute inset-0 w-full h-full object-cover">
+      <ParticlesBackground />
+  <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         
@@ -22,7 +24,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+     
       <div className="absolute xs:bottom-10 bottom-32
       w-full  flex justify-center items-center">
 <a href="#about">
@@ -40,6 +42,7 @@ const Hero = () => {
             />
           </div>
 </a>
+      </div>
       </div>
       </section>
   )
