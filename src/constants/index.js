@@ -55,6 +55,15 @@ import {
     }
  
   ];
+  const education = [
+{
+ name:"Bachelor of technology in computer science and engineering",
+ college:"Babu Banarasi Das institute of technology and management",
+ logo: "https://media.licdn.com/dms/image/C4D0BAQEn2H4KtxRUCQ/company-logo_200_200/0/1652782179002?e=2147483647&v=beta&t=VLxMVJmHwrXGgwZzs5AHLHvQ86TU2wWfAdgdF5sZQ5Q",
+ date:" December 2020 - May 2024",
+}
+
+  ];
   
   const technologies = [
     {
@@ -213,4 +222,4 @@ import {
     
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects ,education};

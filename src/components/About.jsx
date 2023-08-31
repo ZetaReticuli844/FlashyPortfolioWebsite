@@ -23,7 +23,7 @@ flex justify-evenly items-center flex-col">
     </Tilt>
   );
 }
-//bg-gradient-to-r from-green-300 to-purple-400
+
 
 const About = () => {
   return (
