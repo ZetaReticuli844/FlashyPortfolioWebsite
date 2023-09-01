@@ -1,71 +1,45 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
-import { fadeIn, staggerContainer } from '../utils/motion'
+import { fadeIn, staggerContainer,textVariant } from '../utils/motion'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {education} from '../constants'
 import { SectionWrapper } from '../hoc';
+import {Tilt} from "react-tilt"
+
 
 const EducationCard = ({education}) => {
     return (
-        <VerticalTimelineElement
-        contentStyle={{
-            background: "#1d1836",
-            color: "#fff",
-            borderBottom:"5px solid red",
-    
+      <div className="bg-tertiary rounded-2xl w-full sm:w-[600px] h-[200px] sm:h-[200px] flex flex-col justify-center items-center p-4">
+      <div className="flex justify-center items-center mb-4 ">
+        <img src={education.logo} alt="" className="w-[50px] h-[50px] object-cover rounded-full border-purple-400" />
+        <h2 className="text-2xl font-bold text-white ml-4">{education.name}</h2>
+      </div>
+      <p className="text-white text-center mb-4">{education.college}</p>
+      <small className="text-white text-center italic ">{education.date}</small>
+    </div>
 
-        }}
-        contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-        date={education.date}
-        iconStyle={{ background: education.logo }}
-        icon={
-            <div className='flex justify-center items-center w-full h-full'>
-            <img
-                src={education.icon}
-                alt={education.college}
-                className='w-[60%] h-[60%] object-contain'
-            />
-            </div>
-        }
-        >
-        <div>
-      <img
-  src={education.logo}
-  alt={education.name}
-  className="w-[20%] h-[20%] object-contain rounded-full ml-auto filter drop-shadow-[0 0 5px #ff0000]"
-/>
-            <h3 className='text-white text-[24px] font-bold'>{education.name}</h3>
-            <p
-            className='text-secondary text-[16px] font-semibold'
-            style={{ margin: 0 }}
-            >
-            {education.college}
-            </p>
-        </div>
-    
-        </VerticalTimelineElement>
+
+
+      
     );
 }
 
 const Education = () => {
-    return (
-        <motion.div variants={staggerContainer()} className="mt-20">
-     
-          <p className={`${styles.sectionSubText} text-center`}>
-            My Education
-          </p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>
-            Education
-          </h2>
-     
-        <VerticalTimeline>
-        {education.map((education,index)=>(
-            <EducationCard key={index} education={education}/>
-        ))}
-        </VerticalTimeline>
-      </motion.div>
+    return (<div className={`mt-12 bg-black`}>
+      <motion.div variants={textVariant()} className={` text-center  bg-black`} >
+            
+            <h2 className={styles.sectionHeadText}>Education</h2>
+          </motion.div>
+          <motion.div variants={staggerContainer()}>
+
+{education.map((education,index)=>(
+  <EducationCard key={index} education={education}/>
+))}
+
+</motion.div>
+        </div>
     )
 }
 
@@ -75,3 +49,6 @@ export default SectionWrapper(Education)
 
 
 
+// {education.map((education,index)=>(
+//     <EducationCard key={index} education={education}/>
+// ))}
