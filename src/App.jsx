@@ -1,30 +1,41 @@
 import { BrowserRouter as Router} from 'react-router-dom'
 import {About, Contact, Experience, Feedbacks, Hero, Navbar,
-Tech, Works, StarsCanvas,Education} from './components'
+Tech, Works,Education,TechStack} from './components'
+import Lotie from 'lottie-react'
 
+import space from './components/animations/space.json'
 
 const App = () => {
   return (
     <div className="App">
       <Router>
+    
+        < div className='bg-gradient-to-r from-gray-700 via-gray-900 to-black'>
+      
+   
+    
         <div className="relative z-0 bg-primary">
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-no-center">
+  
+          
             <Navbar />
+            
             <Hero />
+    
        
-          </div>
           <About />
-<Education />
-          <Experience />
-          <Tech />  
+          <TechStack />
+          <Education />
+      
+           
           <Works />
-          <Feedbacks />
-          <div className="relative z-0">
+       
+       
+
             <Contact />
-            <StarsCanvas />
+     
+         
           </div>
-
-
+        
         </div>
       </Router>
       </div>

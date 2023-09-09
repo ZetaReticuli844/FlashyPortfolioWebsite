@@ -14,9 +14,11 @@
     "@react-three/drei": "^9.80.5",
     "@react-three/fiber": "^8.13.7",
     "framer-motion": "^10.16.1",
+    "lottie-react": "^2.4.0",
     "maath": "^0.7.0",
     "pug": "^3.0.2",
     "react": "^18.2.0",
+    "react-3d-icons": "^1.0.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
@@ -25,7 +27,8 @@
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.155.0",
     "tsparticles": "^2.12.0",
-    "use-interval": "^1.4.0"
+    "use-interval": "^1.4.0",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "black",
+        primary: "transparent",
         secondary: "#aaa6c3",
         tertiary: "#151030",
         "black-100": "#100d25",
@@ -18,12 +18,12 @@ module.exports = {
       screens: {
         xs: "450px",
       },
-      backgroundImage1: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/hero.jpg')",
+        "portfolio-pattern": "bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800",
+
       },
-      backgroundImage2: {
-        'gradient-primary': 'linear-gradient(to right, #FF416C, #FF4B2B)',
-      }
+     
     },
   },
   plugins: [],

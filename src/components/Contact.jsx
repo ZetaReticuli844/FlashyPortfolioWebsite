@@ -2,9 +2,10 @@ import {useState, useRef} from 'react'
 import {motion} from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import {styles} from '../styles'
-import { EarthCanvas} from './canvas'
+
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+
 
 //template_1eaqwxq
 //service_1xprkz8
@@ -49,12 +50,13 @@ const handleSubmit=(e)=>{
 })
 }
   return (
-  <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 
+    
+  <div className=" xl:mt-12 xl:flex-row-reverse flex-col-reverse flex gap-10 
   overflow-hidden">
 
-<motion.div variants={slideIn("left","tween",0.2,1)}
- className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-  <h2 className={`${styles.sectionHeadText} text-white`}>Contact Me</h2>
+<motion.div variants={slideIn("right","tween",0.2,1)}
+ className='flex-[0.75] bg-gray-900 bg-opacity-50 backdrop-blur-lg shadow-card p-8 rounded-2xl  '>
+  <h2 className={`${styles.sectionHeadText} text-white`}>Hit me up!</h2>
   <form  ref={formRef} onSubmit={handleSubmit} className="mt-5 flex flex-col gap-5">
     <label htmlFor="name" className="text-white text-[16px]">Name</label>
     <input
@@ -63,7 +65,7 @@ const handleSubmit=(e)=>{
               value={form.name}
               onChange={handleChange}
               placeholder="your name here"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
     <label htmlFor="email" className="text-white text-[16px]">Email</label>
     <input
@@ -72,7 +74,7 @@ const handleSubmit=(e)=>{
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
     <label htmlFor="message" className="text-white text-[16px]">Message</label>
     <textarea
@@ -81,9 +83,9 @@ const handleSubmit=(e)=>{
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
-    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl text-white-100 text-[16px] font-bold flex justify-center items-center">
+    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl text-white-100 text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-300 ease-in-out">
       {isSending ? "Sending..." : "Send"}
     </button>
 
@@ -93,9 +95,13 @@ const handleSubmit=(e)=>{
 <motion.div
 variants={slideIn("right","tween",0.2,1)}
 className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-<EarthCanvas/>
+<h1 className={`${styles.heroHeadText} italic`}>
+My inbox is lonely and in need of some good company.
+  </h1>
 </motion.div>
+
 </div>
+
  
   )
 }

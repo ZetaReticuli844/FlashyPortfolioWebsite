@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
+import backend from "./backend.json";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -31,6 +31,18 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import django from "./tech/django.png"
 import passwordmanager from "./passwordmanager.png"
+import ruby from "./tech/ruby.png"
+import rails from "./tech/rails.png"
+import postgre from "./tech/postgre.png"
+import mysql from "./tech/mysql.png"
+import cplus from "./tech/c++.png"
+import python from "./tech/python.png"
+import graphql from "./tech/graphql.png"
+import hero from  "./hero.jpg"
+import frontend from "./webdev.json"
+
+
+
 
 export {
   logo,
@@ -63,4 +75,15 @@ export {
   tripguide,
   django,
   passwordmanager,
+  ruby,
+  rails,
+  postgre,
+  mysql,
+  cplus,
+  python,
+  graphql,
+  hero,
+  frontend,
+  
+
 };

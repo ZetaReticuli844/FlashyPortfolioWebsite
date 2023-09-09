@@ -17,7 +17,7 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
       speed:450,
       glare:true,
       "max-glare":0.5
-    }} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full  d">
+    }} className="shadow-card  bg-gray-900  backdrop-blur-sm bg-opacity-50 p-5 rounded-2xl sm:w-[360px] w-full  d">
       <div className="relative w-full h-[230px]">
         <img src={image} alt={name} className="w-full h-full object-cover  "/>
 

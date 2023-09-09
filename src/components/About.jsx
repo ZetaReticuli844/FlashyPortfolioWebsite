@@ -6,17 +6,18 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import Lottie from "lottie-react";
 
 const ServiceCard = ({ index,title, icon }) => {
   return (
    <Tilt className="xs:w-[250px] w-full ">
 <motion.div
 variants={fadeIn("right","spring",0.5*index,0.75)}
-className="w-full bg-gradient-to-r from-green-300 to-purple-400  p-[1px] rounded-[20px] shadow-card">
+className="w-full backdrop-blur p-[1px] rounded-[20px] shadow-card">
 <div options={{max:45 , scale:1 ,speed:450 }}
-className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[250px]
+className=" rounded-[20px] py-5 px-12 min-h-[250px]
 flex justify-evenly items-center flex-col">
-<img src={icon} alt={title} className="w-16 h-16 object-contain"/>
+<Lottie animationData={icon} className="w-[100px] h-[100px]"/>
 <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
 </div>
 </motion.div>
@@ -27,7 +28,7 @@ flex justify-evenly items-center flex-col">
 
 const About = () => {
   return (
-  <>
+  <div className="">
   <motion.div variants={textVariant()}>
   
 <h2 className={styles.sectionHeadText}>Who am I ?</h2>
@@ -41,7 +42,7 @@ I am a skilled software Engineering student in 4th year at BBDITM
   <ServiceCard key={index} service={service}  {...service}/>
 ))}
   </div>
-  </>
+  </div>
 
   )
 }
