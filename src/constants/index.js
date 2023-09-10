@@ -37,6 +37,7 @@ import {
     frontend
     
   } from "../assets";
+  import {BiLogoDjango,BiLogoJavascript,BiLogoCss3,BiLogoHtml5} from "react-icons/bi";
 
   
   export const navLinks = [
@@ -192,19 +193,23 @@ import {
       tags: [
         {
           name: "html",
-          color: "blue-text-gradient",
+          color: "blue-text-gradient",   //BiLogoDjango,BiLogoJavascript,BiLogoCss3,BiLogoHtml5
+          icon: BiLogoHtml5,
         },
         {
           name: "django",
           color: "green-text-gradient",
+          icon: BiLogoDjango,
         },
         {
           name: "css",
           color: "pink-text-gradient",
+          icon: BiLogoCss3,
         },
         {
           name: "javascript",
           color: "yellow-text-gradient",
+          icon: BiLogoJavascript,
         }
       ],
       image: passwordmanager,

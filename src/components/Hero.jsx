@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="relative w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full ">
-       <Lottie animationData={laptop} className="w-[500px] h-[500px] sm:w-[500px] sm:h-[500px]" />
+       <Lottie animationData={laptop} className="w-[400px] pt-60 pr-60 sm:w-[700px] sm:pt-0 sm:pr-0" />
        </div> 
       </div>
      

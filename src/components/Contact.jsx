@@ -5,6 +5,8 @@ import {styles} from '../styles'
 
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import dog from './animations/dog.json'
+import Lottie from 'lottie-react'
 
 
 //template_1eaqwxq
@@ -85,7 +87,7 @@ const handleSubmit=(e)=>{
               placeholder='What you want to say?'
               className='bg-black  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
-    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl text-white-100 text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-300 ease-in-out">
+    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl text-white-100 text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-900 ease-in-out">
       {isSending ? "Sending..." : "Send"}
     </button>
 
@@ -94,10 +96,11 @@ const handleSubmit=(e)=>{
 </motion.div>
 <motion.div
 variants={slideIn("right","tween",0.2,1)}
-className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
-<h1 className={`${styles.heroHeadText} italic`}>
-My inbox is lonely and in need of some good company.
-  </h1>
+className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] '>
+<h4 className={` ${styles.heroSubText} italic`}>
+"I am lonely and in need of some good company"- probably my inbox
+  </h4>
+  <Lottie animationData={dog} className="w-[300px] sm:w-[500px]" />
 </motion.div>
 
 </div>

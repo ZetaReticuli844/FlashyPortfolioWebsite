@@ -7,17 +7,18 @@ import { github } from '../assets'
 import { projects } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 
+
 const ProjectCard = ({index, name, description, image,source_code_link,tags}) => {
 
   return(
-   <motion.div variants={fadeIn("","",0.5*index,0.75)}>
+   <motion.div variants={fadeIn("","",0.5*index,0.75)} className="shadow-card  bg-gray-900  backdrop-blur-sm bg-opacity-50 p-5 rounded-2xl sm:w-[360px] w-full">
     <Tilt options={{
       max:25,
       scale:1,
       speed:450,
       glare:true,
       "max-glare":0.5
-    }} className="shadow-card  bg-gray-900  backdrop-blur-sm bg-opacity-50 p-5 rounded-2xl sm:w-[360px] w-full  d">
+    }} className=" ">
       <div className="relative w-full h-[230px]">
         <img src={image} alt={name} className="w-full h-full object-cover  "/>
 
@@ -30,9 +31,9 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
 <div className='mt-5'>
 <h3 className='text-white font-bold text-[24px]'>{name}</h3>
 <p className="text-secondary text-[14px] leading-[20px] mt-2">{description}</p>
-<div className="mt-5 flex flex-row gap-3">
+<div className="mt-5 flex flex-row gap-1">
  {tags.map((tag)=>(
-  <p key={tag.name} className={`${tag.color} text-[12px] `}>#{tag.name}</p>))}
+  <h4 key={tag.name} className={`w-[150px] `}>{<tag.icon/>}</h4>))}
 </div>
 </div>
     </Tilt>
@@ -57,11 +58,12 @@ className="mt-3 text-secondary text-[17px]leading-[30px] max-w-3xl text-center "
 These projects show my skills in different areas of Web development.
 </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-7">
       {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
         </div>
+     
   </>
   )
 }
