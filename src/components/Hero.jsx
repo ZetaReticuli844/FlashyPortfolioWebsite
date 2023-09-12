@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaChevronDown } from 'react-icons/fa';
 import Lottie from  "lottie-react"
 import laptop from "./animations/laptop.json";
-
+import Greetings from './Greetings';
 
 
 const Hero = () => {
@@ -23,11 +23,10 @@ const Hero = () => {
 
         <div >
           <h1 className={`${styles.heroHeadText} text-white`}>
-           Greetings fellow humans, My name is <span className=' text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-300 via-fuchsia-600 to-orange-600'>Yogesh</span>
+          Ahoy curious visitor, My name is <span className=' text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900 via-fuchsia-600 to-red-600'>Yogesh</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am Computer Engineering student in my 4th year, <br className='sm:block hidden' />
-       currently looking for internship opportunities.
+          <Greetings />
           </p>
         </div>
         <div className="relative w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full ">

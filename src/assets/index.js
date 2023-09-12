@@ -31,6 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import django from "./tech/django.png"
 import passwordmanager from "./passwordmanager.png"
+import portfolio from "./portfolio.png"
 import ruby from "./tech/ruby.png"
 import rails from "./tech/rails.png"
 import postgre from "./tech/postgre.png"
@@ -84,6 +85,7 @@ export {
   graphql,
   hero,
   frontend,
+  portfolio,
   
 
 };

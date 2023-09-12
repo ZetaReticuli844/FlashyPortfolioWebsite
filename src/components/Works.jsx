@@ -31,10 +31,9 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
 <div className='mt-5'>
 <h3 className='text-white font-bold text-[24px]'>{name}</h3>
 <p className="text-secondary text-[14px] leading-[20px] mt-2">{description}</p>
-<div className="mt-5 flex flex-row gap-1">
+<div className="mt-5 flex flex-row ">
  {tags.map((tag)=>(
-  <h4 key={tag.name} className={`w-[150px] `}>{<tag.icon/>}</h4>))}
-</div>
+  <h3 key={tag.name} className={`w-[50px]`}>{<tag.icon className=""/>}</h3>))}</div>
 </div>
     </Tilt>
    </motion.div>

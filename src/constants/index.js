@@ -34,10 +34,11 @@ import {
     graphql,
     cplus,
     python,
-    frontend
+    frontend,
+    portfolio,
     
   } from "../assets";
-  import {BiLogoDjango,BiLogoJavascript,BiLogoCss3,BiLogoHtml5} from "react-icons/bi";
+  import {BiLogoDjango,BiLogoJavascript,BiLogoCss3,BiLogoHtml5,BiLogoTailwindCss} from "react-icons/bi";
 
   
   export const navLinks = [
@@ -70,10 +71,22 @@ import {
   const education = [
 {
  name:"Bachelor of technology in computer science and engineering",
- college:"Babu Banarasi Das institute of technology and management",
+ college:"Babu Banarasi Das institute of technology and management, Lucknow",
  logo: "https://media.licdn.com/dms/image/C4D0BAQEn2H4KtxRUCQ/company-logo_200_200/0/1652782179002?e=2147483647&v=beta&t=VLxMVJmHwrXGgwZzs5AHLHvQ86TU2wWfAdgdF5sZQ5Q",
- date:" December 2020 - May 2024",
-}
+ date:"2020-2024",
+},
+{
+  name:"Intermediate",
+  college:"Lucknow public school South City, Lucknow",
+  logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUGLm4i3-vfrrDEfRVSmIahTABcAnJheJ66Bp5gox&s",
+  date:"2018-2019",
+},
+{
+  name:"High School",
+  college:"Army Public School Nehru Road, Lucknow",
+  logo:"https://media.licdn.com/dms/image/C560BAQGyeZOF7Zf_RA/company-logo_200_200/0/1587707876871?e=2147483647&v=beta&t=TnltOJ0y48nObFyctnxIHpywsHRLzr5PCQ-7dq74Wt0",
+  date:"2016-2017",
+},
 
   ];
   
@@ -213,9 +226,116 @@ import {
         }
       ],
       image: passwordmanager,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/ZetaReticuli844/SekuraChan-password-manager",
     },
+    {
+      name: "Portfolio Website",
+      description:"A portfolio website built using React JS and Tailwind CSS",
+      tags: [
+        { name: "reactjs", color: "blue-text-gradient", icon: BiLogoJavascript },
+        { name: "tailwind", color: "green-text-gradient", icon: BiLogoTailwindCss },
+
+ 
+      ],
+      image: portfolio,
+      source_code_link: "https://github.com/ZetaReticuli844/FlashyPortfolioWebsite",
+    }
     
   ];
+  const languages = [
+    {
+      name: "English",
+      greeting: "Hi",
+    },
+    {
+      name: "Hindi",
+      greeting: "नमस्ते",
   
-  export { services, technologies, experiences, testimonials, projects ,education};
+    },
+    {
+      name: "Japanese",
+      greeting: "こんにちは",
+    },
+    {
+      name: "Spanish",
+      greeting: "Hola",
+    },
+    {
+      name: "French",
+      greeting: "Bonjour",
+
+    },
+    { name: "German",
+      greeting: "Hallo",
+    },
+    {
+      name: "Chinese",
+      greeting: "你好",
+    },
+    {
+      name: "Russian",
+      greeting: "Здравствуйте",
+    },
+    { name: "Arabic",
+      greeting: "مرحبا",
+    },
+    {
+      name: "Portuguese",
+      greeting: "Olá",
+    },
+    { 
+      name: "Italian",
+      greeting: "Ciao",
+    },
+    {  name: "Korean",
+
+      greeting: "안녕하세요",
+    },
+    {
+      name: "Turkish",
+      greeting: "Merhaba",
+    },
+    { name: "Polish",
+
+      greeting: "Cześć",
+    },
+    {
+      name:"Telugu",
+      greeting:"హలో",
+    },
+    { name:"Tamil",
+    greeting:"வணக்கம்", 
+  },{
+    name:"Kannada",
+    greeting:"ಹಲೋ",
+  },{
+    name:"Malayalam",
+    greeting:"ഹലോ",
+  },{
+    name:'Bengali',
+    greeting:"হ্যালো",
+  },{
+    name:"Marathi",
+    greeting:"नमस्कार",
+  },
+  {
+    name:"Gujarati",
+    greeting:"હેલો",
+  },
+  { name:"Urdu",
+  greeting:"ہیلو",
+},
+{
+  name:"Swedish",
+greeting:"Hallå",
+},
+{
+  name:"Greek",
+greeting:"Γεια σας",
+},
+
+
+
+  ];
+  
+  export { services, technologies, experiences, testimonials, projects ,education, languages};

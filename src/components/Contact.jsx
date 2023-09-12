@@ -98,7 +98,7 @@ const handleSubmit=(e)=>{
 variants={slideIn("right","tween",0.2,1)}
 className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] '>
 <h4 className={` ${styles.heroSubText} italic`}>
-"I am lonely and in need of some good company"- probably my inbox
+"I am lonely and in need of some good company apart from the spam mails of course"- probably my inbox
   </h4>
   <Lottie animationData={dog} className="w-[300px] sm:w-[500px]" />
 </motion.div>

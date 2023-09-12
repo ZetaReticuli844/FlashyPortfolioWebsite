@@ -35,7 +35,15 @@ const About = () => {
   </motion.div>
   <motion.p variants={fadeIn("","",0.5,1)} className="mt-4 text-secondary max-w-3xl
   ">
-I am a skilled software Engineering student in 4th year at BBDITM
+Hi there! I'm currently in my final year of computer engineering at BBDITM.
+
+When it comes to programming, I consider myself fluent in multiple programming languages and frameworks. While I have a broad skill set, my specialization lies in developing web applications. Working with languages like Python, Javascript, and Ruby, and frameworks such as React, Django,Next and Rails, has allowed me to build a strong foundation and tackle various projects with ease.
+
+Aside from my programming endeavors, I also have a facination with Japnese culture. In fact, I'm currently taking up Japanese on the side.
+
+One thing I can proudly say about myself is that I'm a fast learner. Whether it's grasping a new concept or solving a challenging problem, I'm always eager to dive right in with enthusiasm. The thrill of acquiring new skills and expanding my knowledge is what keeps me motivated in this ever-evolving field.
+
+
   </motion.p>
   <div className="mt-20 flex flex-wrap gap-10">
 {services.map((service,index) => (
