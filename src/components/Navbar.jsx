@@ -5,6 +5,7 @@ import {navLinks} from '../constants'
 import {logo, menu, close} from '../assets'
 import {BsLinkedin} from 'react-icons/bs'
 import {CgDarkMode} from 'react-icons/cg'
+import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
   const handleDarkModeToggle = () => {
@@ -45,12 +46,22 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
-          <img src={toggle? close: menu} alt="menu" className="w-[28px] h-[28px] object-contain cursor-pointer"
-          onClick={()=>setToggle(!toggle)} />
-<div className={`${!toggle?'hidden':'flex'} p-6 black-gradiant backdrop-blur-lg  bg-gray-900 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+        <button
+          className="text-gray-800 dark:text-gray-200 focus:outline-none"
+          onClick={() => setToggle(!toggle)}
+        >
+          <AiOutlineMenu
+            className={`w-6 h-6 toggle-menu ${toggle ? 'hidden' : 'block'}`}
+          />
+          <AiOutlineClose
+            className={`w-6 h-6 toggle-menu ${toggle ? 'block' : 'hidden'}`}
+          />
+        </button>
+ 
+<div className={`${!toggle?'hidden':'flex'} p-6 black-gradiant backdrop-blur-lg bg-white text-black dark:bg-gray-900 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
 <ul className="list-none flex justify-end items-start flex-col gap-4">
           {navLinks.map((link) => (
-            <li key={link.id} className={`${active===link.title ? "text-white " : "text-black dark:text:white"}
+            <li key={link.id} className={`${active===link.title ? "text-white " : "text-black dark:text-white"}
           font-poppins font-medium cursor-pointer text-[16px]`}
             onClick={()=>{
               setToggle(!toggle)
@@ -59,11 +70,11 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-          <BsLinkedin className="text-black text-[28px] cursor-pointer" onClick={()=>window.open("https://www.linkedin.com/in/yogesh-shekhawat-5a8014224/", "_blank")} />
+          <BsLinkedin className="text-black dark:text-white text-[28px] cursor-pointer" onClick={()=>window.open("https://www.linkedin.com/in/yogesh-shekhawat-5a8014224/", "_blank")} />
           </li>
           <li>
           <button className="w-10" onClick={handleDarkModeToggle}>
-           <CgDarkMode className="w-7 h-7"/>
+           <CgDarkMode className="w-7 h-7 text-black dark:text-white"/>
            </button>
           </li>
          
