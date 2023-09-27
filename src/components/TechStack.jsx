@@ -10,11 +10,11 @@ import { Icon } from "react-3d-icons";
 
 const TechCard = ({ technologies }) => {
     return (
-    
+   
         <Tilt className="xs:w-[170px] w-full">
         <motion.div
         variants={fadeIn("right","spring",0.5,0.75)}
-        className="w-full rounded-[10px] shadow-card bg-gray-900 bg-opacity-50 backdrop-blur-sm" >
+        className="w-full rounded-[10px] shadow-card bg-white dark:bg-gray-900 bg-opacity-50 backdrop-blur-sm" >
         <div 
         className=" rounded-[10px] py-5 px-5 min-h-[150px]
         flex justify-evenly items-center ">
@@ -23,6 +23,7 @@ const TechCard = ({ technologies }) => {
         </div>
         </motion.div>
             </Tilt>
+            
     )
 }
 
@@ -34,6 +35,7 @@ const TechStack = () => {
     const tools = technologies.filter((tech) => tech.type === 'tool');
    
   return (
+    
     <div className=''>
     <motion.div variants={staggerContainer()} className={`mt-12 bg-primary place-content-center`}>
         <h1 className={`${styles.sectionHeadText} text-center`}>My Tech Stack</h1>

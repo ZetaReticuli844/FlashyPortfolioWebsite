@@ -11,7 +11,7 @@ import {fadeIn, textVariant} from '../utils/motion'
 const ProjectCard = ({index, name, description, image,source_code_link,tags}) => {
 
   return(
-   <motion.div variants={fadeIn("","",0.5*index,0.75)} className="shadow-card  bg-gray-900  backdrop-blur-sm bg-opacity-50 p-5 rounded-2xl sm:w-[360px] w-full">
+   <motion.div variants={fadeIn("","",0.5*index,0.75)} className="shadow-card bg-white  dark:bg-gray-900  backdrop-blur-sm bg-opacity-50 p-5 rounded-2xl sm:w-[360px] w-full">
     <Tilt options={{
       max:25,
       scale:1,
@@ -29,7 +29,7 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
     <img src={github} alt="github" className="w-5 h-5 object-contain"/></div>
   </div>
 <div className='mt-5'>
-<h3 classNam=' font-bold text-[24px]'>{name}</h3>
+<h3 className=' font-bold text-[24px]'>{name}</h3>
 <p className="text-secondary text-[14px] leading-[20px] mt-2">{description}</p>
 <div className="mt-5 flex flex-row ">
  {tags.map((tag)=>(

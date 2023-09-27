@@ -57,7 +57,7 @@ const handleSubmit=(e)=>{
   overflow-hidden">
 
 <motion.div variants={slideIn("right","tween",0.2,1)}
- className='flex-[0.75] bg-gray-900 bg-opacity-50 backdrop-blur-lg shadow-card p-8 rounded-2xl  '>
+ className='flex-[0.75] bg-white dark:bg-gray-900 bg-opacity-50 backdrop-blur-lg shadow-card p-8 rounded-2xl  m-10'>
   <h2 className={`${styles.sectionHeadText} `}>Hit me up!</h2>
   <form  ref={formRef} onSubmit={handleSubmit} className="mt-5 flex flex-col gap-5">
     <label htmlFor="name" className=" text-[16px]">Name</label>
@@ -67,7 +67,7 @@ const handleSubmit=(e)=>{
               value={form.name}
               onChange={handleChange}
               placeholder="your name here"
-              className='bg-black py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
+              className=' bg-gray-200 dark:bg-black py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
             />
     <label htmlFor="email" className=" text-[16px]">Email</label>
     <input
@@ -76,7 +76,7 @@ const handleSubmit=(e)=>{
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-black py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
+              className=' bg-gray-200 dark:bg-black  py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
             />
     <label htmlFor="message" className=" text-[16px]">Message</label>
     <textarea
@@ -85,7 +85,7 @@ const handleSubmit=(e)=>{
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-black  py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
+              className=' bg-gray-200 dark:bg-black   py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
             />
     <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl  text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-900 ease-in-out">
       {isSending ? "Sending..." : "Send"}
