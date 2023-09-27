@@ -10,7 +10,8 @@ const App = () => {
     <div className="App">
       <Router>
     
-        < div className="bg-gradient-to-r from-rose-500 via-violet-900 to-purple-800">
+        < div className="  @apply bg-[#d9d9d9] bg-[linear-gradient(315deg,#d9d9d9_0%,#f6f2f2_74%)] text-black-200
+        dark:bg-[#130f40] dark:bg-[linear-gradient(315deg,#130f40_0%,#000000_74%)]  dark:text-white">
       
    
     

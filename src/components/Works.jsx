@@ -29,7 +29,7 @@ const ProjectCard = ({index, name, description, image,source_code_link,tags}) =>
     <img src={github} alt="github" className="w-5 h-5 object-contain"/></div>
   </div>
 <div className='mt-5'>
-<h3 className='text-white font-bold text-[24px]'>{name}</h3>
+<h3 classNam=' font-bold text-[24px]'>{name}</h3>
 <p className="text-secondary text-[14px] leading-[20px] mt-2">{description}</p>
 <div className="mt-5 flex flex-row ">
  {tags.map((tag)=>(

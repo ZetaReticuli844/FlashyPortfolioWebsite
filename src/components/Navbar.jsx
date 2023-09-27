@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={()=>{setActive(""); window.scroll(0,0);}}>
           <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-[18px] font-bold cursor-pointer flex '>
             YOGESH &nbsp;
           
           </p>
@@ -49,7 +49,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-          <BsLinkedin className="text-white text-[28px] cursor-pointer" onClick={()=>window.open("https://www.linkedin.com/in/yogesh-shekhawat-5a8014224/", "_blank")} />
+          <BsLinkedin className="text-black text-[28px] cursor-pointer" onClick={()=>window.open("https://www.linkedin.com/in/yogesh-shekhawat-5a8014224/", "_blank")} />
           </li>
         </ul>
 

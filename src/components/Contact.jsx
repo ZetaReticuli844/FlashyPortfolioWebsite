@@ -58,36 +58,36 @@ const handleSubmit=(e)=>{
 
 <motion.div variants={slideIn("right","tween",0.2,1)}
  className='flex-[0.75] bg-gray-900 bg-opacity-50 backdrop-blur-lg shadow-card p-8 rounded-2xl  '>
-  <h2 className={`${styles.sectionHeadText} text-white`}>Hit me up!</h2>
+  <h2 className={`${styles.sectionHeadText} `}>Hit me up!</h2>
   <form  ref={formRef} onSubmit={handleSubmit} className="mt-5 flex flex-col gap-5">
-    <label htmlFor="name" className="text-white text-[16px]">Name</label>
+    <label htmlFor="name" className=" text-[16px]">Name</label>
     <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
               placeholder="your name here"
-              className='bg-black py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
             />
-    <label htmlFor="email" className="text-white text-[16px]">Email</label>
+    <label htmlFor="email" className=" text-[16px]">Email</label>
     <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-black py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
             />
-    <label htmlFor="message" className="text-white text-[16px]">Message</label>
+    <label htmlFor="message" className=" text-[16px]">Message</label>
     <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-black  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-black  py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
             />
-    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl text-white-100 text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-900 ease-in-out">
+    <button type="submit" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 w-[150px] h-[50px] rounded-2xl  text-[16px] font-bold flex justify-center items-center hover:from-purple-800 hover:via-purple-400 hover:to-purple-200 transition-all duration-900 ease-in-out">
       {isSending ? "Sending..." : "Send"}
     </button>
 
@@ -97,9 +97,7 @@ const handleSubmit=(e)=>{
 <motion.div
 variants={slideIn("right","tween",0.2,1)}
 className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] '>
-<h4 className={` ${styles.heroSubText} italic`}>
-"I am lonely and in need of some good company apart from the spam mails of course"- probably my inbox
-  </h4>
+
   <Lottie animationData={dog} className="w-[300px] sm:w-[500px]" />
 </motion.div>
 

@@ -118,7 +118,7 @@ const Greetings = () => {
       cursor={true}
       repeat={Infinity}
     
-      className={`${styles.heroSubText} mt-2 text-white-100`}
+      className={`${styles.heroSubText} mt-2`}
     />
   );
 };

@@ -13,12 +13,12 @@ const ServiceCard = ({ index,title, icon }) => {
    <Tilt className="xs:w-[250px] w-full ">
 <motion.div
 variants={fadeIn("right","spring",0.5*index,0.75)}
-className="w-full backdrop-blur p-[1px] rounded-[20px] shadow-card">
+className="w-full  bg-gray-900 bg-opacity-50 backdrop-blur p-[1px] rounded-[20px] shadow-card">
 <div options={{max:45 , scale:1 ,speed:450 }}
 className=" rounded-[20px] py-5 px-12 min-h-[250px]
 flex justify-evenly items-center flex-col">
 <Lottie animationData={icon} className="w-[100px] h-[100px]"/>
-<h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+<h3 className="text-[20px] font-bold text-center">{title}</h3>
 </div>
 </motion.div>
     </Tilt>
@@ -33,7 +33,7 @@ const About = () => {
   
 <h2 className={styles.sectionHeadText}>Who am I ?</h2>
   </motion.div>
-  <motion.p variants={fadeIn("","",0.5,1)} className="mt-4 text-secondary max-w-3xl
+  <motion.p variants={fadeIn("","",0.5,1)} className="mt-4 max-w-3xl
   ">
 Hi there! I'm currently in my final year of computer engineering at BBDITM.
 
