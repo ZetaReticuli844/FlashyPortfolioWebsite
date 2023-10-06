@@ -125,16 +125,8 @@ import {
 
 
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-      type: "framework",
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-      type: "tool",
-    },
+   
+  
   
     {
       name: "git",
@@ -152,36 +144,20 @@ import {
       icon:ruby,
       type:"language",
     },
-    {
-      name:"Rails",
-      icon:rails,
-      type:"framework",
-    },
+   
     {
       name:"PostgreSQL",
       icon:postgre,
       type:"tool",
     },
-    {
-      name:"MySQL",
-      icon:mysql,
-      type:"tool",
-    },
+   
     {
       name:"github",
       icon:github,
       type:"tool",
     },
-    {
-      name:"GraphQL",
-      icon:graphql,
-      type:"tool",
-    },
-    {
-      name:"C++",
-      icon:cplus,
-      type:"language",
-    },
+   
+   
     {
       name:"Python",
       icon:python,
