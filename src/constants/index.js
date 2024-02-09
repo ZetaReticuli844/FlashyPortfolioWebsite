@@ -139,11 +139,7 @@ import {
       icon: docker,
       type: "tool",
     },
-    {
-      name:"Ruby",
-      icon:ruby,
-      type:"language",
-    },
+    
    
     {
       name:"PostgreSQL",
