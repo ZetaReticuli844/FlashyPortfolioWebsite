@@ -36,6 +36,9 @@ import {
     python,
     frontend,
     portfolio,
+    go,
+    swift,
+  
     
   } from "../assets";
   import {BiLogoDjango,BiLogoJavascript,BiLogoCss3,BiLogoHtml5,BiLogoTailwindCss} from "react-icons/bi";
@@ -125,6 +128,12 @@ import {
 
 
     },
+
+    {
+      name:"Typescript",
+      icon:typescript,
+      type:"language"
+    },
    
   
   
@@ -132,6 +141,19 @@ import {
       name: "git",
       icon: git,
       type: "tool",
+    },
+
+    {
+      name:"Go",
+      icon: go,
+      type: "language"
+
+
+    },
+    {
+      name:"Swift",
+      icon:swift,
+      type:"language",
     },
   
     {

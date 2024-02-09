@@ -41,6 +41,8 @@ import python from "./tech/python.png"
 import graphql from "./tech/graphql.png"
 import hero from  "./hero.jpg"
 import frontend from "./webdev.json"
+import go from "./tech/Go.png"
+import swift from "./tech/swift.png"
 
 
 
@@ -86,6 +88,9 @@ export {
   hero,
   frontend,
   portfolio,
+  go,
+  swift,
+
   
 
 };
